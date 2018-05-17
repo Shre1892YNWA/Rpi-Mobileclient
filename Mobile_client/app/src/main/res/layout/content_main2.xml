@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nplix.wifidemoapp.Main2Activity"
+    tools:showIn="@layout/activity_main2">
+
+    <Button
+        android:id="@+id/aForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWifiIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:text="Forward"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <Button
+        android:id="@+id/aRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aForward"
+        android:layout_toEndOf="@+id/aForward"
+        android:layout_toRightOf="@+id/aForward"
+        android:text="Right"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="399dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/aLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/aRight"
+        android:layout_toLeftOf="@+id/aForward"
+        android:layout_toStartOf="@+id/aForward"
+        android:text="Left"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="399dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/aReverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aRight"
+        android:layout_toEndOf="@+id/aLeft"
+        android:layout_toRightOf="@+id/aLeft"
+        android:text="Reverse"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="447dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Auto"
+        android:layout_centerHorizontal="true"
+        android:text="Manual Control"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/md_blue_grey_700"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/Auto"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aLeft"
+        android:layout_alignStart="@+id/aLeft"
+        android:layout_below="@+id/aLeft"
+        android:layout_marginTop="27dp"
+        android:text="Auto"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <TextView
+        android:id="@+id/txtWifi"
+        android:layout_width="366dp"
+        android:layout_height="225dp"
+        android:layout_above="@+id/Auto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:text="TextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+</android.support.constraint.ConstraintLayout>
